@@ -27,8 +27,10 @@ def todo(request):
 
 
 def update(request,id):
-    todos = Todo.objects.all()
-    total_todos = Todo.objects.all().count()
+   
+   
+  
+  
     todo = Todo.objects.get(id=id)
     form = TodoForm()
     if request.method == 'POST':
