@@ -30,7 +30,7 @@ def update(request,id):
    
    
   
-  
+    todos = Todo.objects.all()
     todo = Todo.objects.get(id=id)
     form = TodoForm()
     if request.method == 'POST':
