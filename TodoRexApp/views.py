@@ -27,9 +27,6 @@ def todo(request):
 
 
 def update(request,id):
-   
-   
-  
     todos = Todo.objects.all()
     todo = Todo.objects.get(id=id)
     form = TodoForm()
@@ -40,7 +37,7 @@ def update(request,id):
             return redirect('/todo')
     else:
         form = TodoForm(instance=todo)
-    context = {'todo':todo,'form':form,'todos':todos,'total_todos':total_todos}
+    context = {'todo':todo,'form':form,'todos':todos}
     return render(request,'TodoRexApp/update.html',context=context)
 
 
