@@ -1,0 +1,108 @@
+* {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+body{
+    overflow-x:hidden;
+    width:100%;
+    height:100%;
+    min-height:100vh;
+
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width:100%;
+    max-width:900vh;
+    flex-wrap:wrap;
+
+}
+
+.total-todos {
+   
+    margin-right:3px;
+    color:white;
+    text-align: center;
+    padding-left:60px;
+    padding-right:60px;
+    
+}
+
+
+.addTodo-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right:10px;
+}
+
+.col-todos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:50px;
+}
+
+
+
+.btn-group-index {
+    margin-left:20px;
+    
+}
+
+.btn-group-index a {
+    margin-left:10px;
+    
+}
+
+
+
+
+.card-list {
+    margin:10px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-todos{
+    letter-spacing:7px;
+    
+}
+
+.update-todos{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    letter-spacing:3px;
+    line-height:2;
+
+    
+
+}
+
+.update-form {
+    margin-top:10px;
+
+}
+

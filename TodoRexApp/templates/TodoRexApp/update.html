@@ -1,0 +1,17 @@
+{% extends 'TodoRexApp/index.html' %}
+{% block content %}
+<hr>
+    <br/>
+        <div class="container">
+            <h2 class="update-todos">Update Your Todo Here !!</h2>
+            <div class="update-form">
+                <form method="POST" action="">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" class="btn btn-primary" value="Update">
+                </form>
+            </div>
+        </div>
+    <br/>
+<hr>
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'TodoRexApp/index.html' %}
+{% block content %}
+<div class="container">
+    <br/>
+    <br/>
+    <h1 class="all-todos">All Todo's</h1>
+    <hr>
+    <a href="{% url 'index' %}" class="btn btn-success btn-home"> <- Back To Home</a>
+    <br/>
+    <div class="row">
+        {% for todo in todos %}
+            <div class="col col-md-4 col-sm-5 col-xs-6">
+                <div class="card card-body card-list  bg-dark">
+                <p style="color:white;">{{ todo.todo }}</p>
+                    <div class="btn-group">
+                        <a href="{% url 'delete' todo.id %}" class="btn btn-danger m-2">Delete</a>
+                        <a href="{% url 'update' todo.id %}" class="btn btn-primary m-2">Update</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
